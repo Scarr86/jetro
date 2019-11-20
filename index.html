@@ -13,6 +13,7 @@
    <link rel='stylesheet' type='text/css' media='screen' href='css/slick.css'>
    <link rel='stylesheet' type='text/css' media='screen' href='css/slick-theme.css'>
    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+   <link rel='stylesheet' type='text/css' media='screen' href='css/media.css'>
 </head>
 
 <body>
@@ -24,7 +25,12 @@
                   <span>JET</span>RO
                </a>
             </div>
-            <nav class="header__menu">
+            <nav class="header__menu ">
+               <div class="burger-menu">
+                  <div class="burger-menu__line"></div>
+                  <div class="burger-menu__line"></div>
+                  <div class="burger-menu__line"></div>
+               </div>
                <ul>
                   <li><a href="#">Home</a></li>
                   <li><a href="#">About &nbsp;Us</a></li>
@@ -125,12 +131,24 @@
             </div>
 
             <di v class="slider__nav slider-nav">
-               <div class="slider-nav__item" style="background-image: url('images/slide-min1.jpg');"> </div>
-               <div class="slider-nav__item" style="background-image: url('images/slide-min2.jpg');"> </div>
-               <div class="slider-nav__item" style="background-image: url('images/slide-min3.jpg');"> </div>
-               <div class="slider-nav__item" style="background-image: url('images/slide-min4.jpg');"> </div>
-               <div class="slider-nav__item" style="background-image: url('images/slide-min5.jpg');"> </div>
-               <div class="slider-nav__item" style="background-image: url('images/slide-min6.jpg');"> </div>
+               <div class="slider-nav__wrapper">
+                  <div class="slider-nav__item" style="background-image: url('images/slide-min1.jpg');"></div>
+               </div>
+               <div class="slider-nav__wrapper">
+                  <div class="slider-nav__item" style="background-image: url('images/slide-min2.jpg');"> </div>
+               </div>
+               <div class="slider-nav__wrapper">
+                  <div class="slider-nav__item" style="background-image: url('images/slide-min3.jpg');"> </div>
+               </div>
+               <div class="slider-nav__wrapper">
+                  <div class="slider-nav__item" style="background-image: url('images/slide-min4.jpg');"> </div>
+               </div>
+               <div class="slider-nav__wrapper">
+                  <div class="slider-nav__item" style="background-image: url('images/slide-min5.jpg');"> </div>
+               </div>
+               <div class="slider-nav__wrapper">
+                  <div class="slider-nav__item" style="background-image: url('images/slide-min6.jpg');"> </div>
+               </div>
             </di>
          </div>
       </div>
@@ -201,25 +219,22 @@
             </div>
          </div>
          <div class="works__inner">
-            <div class="works__item">
-               <div class="works__item-img">
-                  <a href="#">
-                     <img src="images/works/image1.jpg" alt="">
-                  </a>
-               </div>
-               <div class="works__item-content">
-                  <div class="works__item-title">
-                     <a href="#"> Character Design </a>
-                     <a href="#"> June 15, 201</a>
+               <div class="works__item">
+                     <a href="#">
+                        <img src="images/works/image1.jpg" alt="">
+                     </a>
+                  <div class="works__item-content">
+                     <div class="works__item-title">
+                        <a href="#"> Character Design </a>
+                        <a href="#"> June 15, 201</a>
+                     </div>
                   </div>
                </div>
-            </div>
+
             <div class="works__item">
-               <div class="works__item-img">
                   <a href="#">
                      <img src="images/works/image2.jpg" alt="">
                   </a>
-               </div>
                <div class="works__item-content">
                   <div class="works__item-title">
                      <a href="#"> Brochure Design</a>
@@ -227,12 +242,11 @@
                   </div>
                </div>
             </div>
+
             <div class="works__item">
-               <div class="works__item-img">
                   <a href="#">
                      <img src="images/works/image3.jpg" alt="">
                   </a>
-               </div>
                <div class="works__item-content">
                   <div class="works__item-title">
                      <a href="#"> Social Media Buttons</a>
@@ -240,12 +254,11 @@
                   </div>
                </div>
             </div>
+
             <div class="works__item">
-               <div class="works__item-img">
                   <a href="#">
                      <img src="images/works/image4.jpg" alt="">
                   </a>
-               </div>
                <div class="works__item-content">
                   <div class="works__item-title">
                      <a href="#"> 10 Amazing Websites</a>
@@ -258,7 +271,7 @@
       </div>
    </section>
 
-   <footer class="footer">
+  <footer class="footer">
       <div class="container">
          <div class="footer__inner">
             <div class="footer__item">

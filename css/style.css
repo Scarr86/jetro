@@ -74,6 +74,45 @@ li {
 
 .header__menu {}
 
+.burger-menu {
+   width: 30px;
+   display: none;
+   cursor: pointer;
+ 
+}
+
+.burger-menu__line {
+   height: 4px;
+   margin-bottom: 4px;
+   background-color: #f6c3b5;
+   transition: all .3s;
+   -webkit-transition: all .3s;
+   -moz-transition: all .3s;
+   -ms-transition: all .3s;
+   -o-transition: all .3s;
+}
+
+.header__menu-active .burger-menu__line:nth-child(2) {
+   display: none;
+}
+
+.header__menu-active .burger-menu__line:nth-child(1) {
+   transform: translateY(50%)  rotate(-45deg)  ;
+   -webkit-transform: translateY(50%)  rotate(-45deg)  ;
+   -moz-transform: translateY(50%)  rotate(-45deg)  ;
+   -ms-transform: translateY(50%)  rotate(-45deg)  ;
+   -o-transform: translateY(50%)  rotate(-45deg)  ;
+   margin-bottom: 0;
+}
+
+.header__menu-active .burger-menu__line:nth-child(3) {
+   transform: translateY(-50%) rotate(45deg) ;
+   -webkit-transform: translateY(-50%) rotate(45deg) ;
+   -moz-transform: translateY(-50%) rotate(45deg) ;
+   -ms-transform: translateY(-50%) rotate(45deg) ;
+   -o-transform: translateY(-50%) rotate(45deg) ;
+}
+
 .header__menu li+li {
    margin-left: 25px;
 }
@@ -201,13 +240,24 @@ li {
    font-family: 'Helvetica Neue';
 }
 
+.slider-nav{
+   /* text-align: center; */
+   text-align: center;
+ 
+}
+.slider-nav .slick-list {
+   margin-left: -10px;
+   margin-right: -10px;
+}
 .slider-nav .slick-slide {
-   margin-right: 20px;
+   /* margin-right: 20px; */
 }
 
 .slider-nav__item {
-   min-width: 140px;
+   max-width: 140px;
    height: 120px;
+   width: 100%;
+   display: inline-block;
 }
 
 /********************/
@@ -302,6 +352,11 @@ li {
 
 .works__item-img {
    line-height: 0;
+
+}
+.works__item-img img{
+   width: 220px;
+   height: 184px;
 }
 
 .works__item-content {
@@ -309,9 +364,8 @@ li {
    border-top: 0px solid transparent;
    padding: 10px;
    font-weight: 400;
+   max-width: 220px;
 }
-
-
 
 .works__item-title a {
    margin-top: 2px;
@@ -387,8 +441,7 @@ li {
    color: #fff;
 }
 
-.footer__item a, 
-.footer__item span {
+.footer__item a, .footer__item span {
    color: #f3b29d;
    font-weight: 300;
 }
@@ -397,10 +450,10 @@ li {
    display: block;
    margin-top: 8px;
 }
-.footer__item-contact p a{
+
+.footer__item-contact p a {
    display: block;
    color: #fff;
-
 }
 
 .social {
