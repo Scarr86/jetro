@@ -76,6 +76,7 @@ li {
 
 .burger-menu {
    width: 30px;
+   height: 30px;
    display: none;
    cursor: pointer;
  
@@ -86,10 +87,6 @@ li {
    margin-bottom: 4px;
    background-color: #f6c3b5;
    transition: all .3s;
-   -webkit-transition: all .3s;
-   -moz-transition: all .3s;
-   -ms-transition: all .3s;
-   -o-transition: all .3s;
 }
 
 .header__menu-active .burger-menu__line:nth-child(2) {
@@ -455,11 +452,13 @@ li {
    display: block;
    color: #fff;
 }
-
 .social {
    margin-top: 18px;
 }
 
 .social a+a {
    margin-left: 5px;
+}
+.slick-loading .slick-list {
+   background: none;
 }

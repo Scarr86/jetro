@@ -47,7 +47,18 @@ $(function () {
 
 
    $('.burger-menu').on('click', function () {
-      $('.header__menu > ul').slideToggle();
-      $(this).toggleClass('header__menu-active');
+      $('.header__menu > ul').slideToggle('', function () {
+         $('.burger-menu').toggleClass('header__menu-active');
+      });
    });
+
+   $(document).click(function (ev) {
+      if (!$('.burger-menu').get(0).contains(ev.target)) {
+         if ($('.burger-menu').hasClass('header__menu-active')){
+            $('.burger-menu').removeClass('header__menu-active');
+            $('.header__menu > ul').slideUp();
+         }
+      }
+   })
+
 });

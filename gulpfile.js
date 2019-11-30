@@ -12,7 +12,6 @@ gulp.task('style', function () {
       'node_modules/slick-carousel/slick/slick.css',
       'node_modules/slick-carousel/slick/slick-theme.css',
       'node_modules/normalize.css/normalize.css',
-      'app/fonts/*.css'
    ])
       .pipe(concat('libs.min.css'))
       .pipe(cssmin())

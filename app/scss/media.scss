@@ -44,7 +44,7 @@
    }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 740px) {
    .header__menu>ul {
       display: none;
       position: absolute;
@@ -103,7 +103,7 @@
    }
 }
 
-@media (min-width: 601px) {
+@media (min-width: 741px) {
    .header__menu>ul {
       display: block !important;
    }
